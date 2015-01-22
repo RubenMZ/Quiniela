@@ -53,6 +53,7 @@ class Quiniela{
 		/*QUINIELA*/
 		bool simularPartidos();
 		bool asignarPremios();
+		bool asignarPartidos();
 
 };
 

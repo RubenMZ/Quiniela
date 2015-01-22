@@ -1,1 +1,1 @@
-g++ MenuPrincipal.cc Quiniela.cc Gestor.cc Interfaz.cc -o MenuPrincipal
+g++ MenuPrincipal.cc Quiniela.cc Gestor.cc Interfaz.cc Partido.cc -o MenuPrincipal -g 

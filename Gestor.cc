@@ -54,10 +54,10 @@ using namespace std;
 
 			if(file.is_open()){
 
-				file<<endl<<"**************** JORNADA X *******************"<<endl;
-				file<<"**********************************************"<<endl;
-				file<<"Local\tGL - GV\tVisitante\tResultado"<<endl;
-				file<<"----------------------------------------------"<<endl;
+				file<<endl<<"********************* JORNADA X ************************"<<endl;
+				file<<"********************************************************"<<endl;
+				file<<"Local\t\t\tGL - GV\tVisitante\tResultado"<<endl;
+				file<<"--------------------------------------------------------"<<endl;
 
 
 				while(i!=lp.end()){

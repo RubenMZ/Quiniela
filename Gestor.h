@@ -30,6 +30,7 @@ class Gestor{
 		/*METODOS*/
 		list<string> equiposALista();
 		bool partidosAFichero( list<Partido> lp);
+		
 
 
 

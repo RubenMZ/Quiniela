@@ -18,7 +18,7 @@ class Partido{
 	public:
 
 		/*CONSTRUCTOR*/
-		Partido();
+		Partido(string local="", int resLocal=0, int resVisitante=0, string visitante="", string resultado="");
 
 		/*MODIFICADORES*/
 		inline void setEquipoLocal(const string &equipo){EquipoLocal_=equipo;};

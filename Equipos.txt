@@ -1,30 +1,30 @@
-Malaga
-Athletic
-Sevilla
-Valencia
-Real Madrid
-Atl.Madrid
-Barcelona
-Almeria
-Cordoba
-Levante
-Elche
-Deportivo
-Granada
-Espanyol
-Eibar
-Real Sociedad
+Malaga        
+Athletic      
+Sevilla       
+Valencia      
+Real Madrid   
+Atl.Madrid    
+Barcelona     
+Almeria       
+Cordoba       
+Levante       
+Elche         
+Deportivo     
+Granada       
+Espanyol      
+Eibar         
+Real Sociedad 
 Rayo Vallecano
-Villarreal
-Celta
-Getafe
-Betis
-Sporting
-Real Sociedad
-Valladolid
-Mallorca
-Recreativo
-Las Palmas
-Numancia
-Racing
-Osasuna
+Villarreal    
+Celta         
+Getafe        
+Betis         
+Sporting      
+Real Sociedad 
+Valladolid    
+Mallorca      
+Recreativo    
+Las Palmas    
+Numancia      
+Racing        
+Osasuna       

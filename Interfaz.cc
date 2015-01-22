@@ -5,11 +5,12 @@
 #include "Partido.h"
 #include "Interfaz.h"
 
+
 using namespace std;
 
 		Interfaz::Interfaz(){
 
-			
+
 		}
 
 
@@ -20,9 +21,8 @@ using namespace std;
 			//....
 		}
 
-		void Interfaz::visualizarPartido(const Partido &p){
-
-			//...
+		void Interfaz::visualizarPartido( Partido &p){
+				cout<<p.getEquipoLocal()<<"\t"<<p.getResultadoLocal()<<" - "<<p.getResultadoVisitante()<<"\t"<<p.getEquipoVisitante()<<"\t"<<p.getResultado()<<endl;
 		}
 
 
@@ -42,18 +42,17 @@ using namespace std;
 			}else{
 				return (false);
 			}
-
 		}
 
 		bool Interfaz::ordenarEquipos(list<string> &listaEquipos){
 
 			if(!listaEquipos.empty()){
-				//listaEquipos.sort(condicion);
+				listaEquipos.sort();
 				return(true);
 			}else{
 				return(false);
 			}
-			
-
 		}
+
+
 

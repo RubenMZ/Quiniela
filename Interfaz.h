@@ -20,10 +20,9 @@ class Interfaz{
 
 		Interfaz();
 		list<string> pedirApuestasPartidos(const list<Partido> &lp);
-		void visualizarPartido(const Partido &p);
+		void visualizarPartido( Partido &p);
 		bool mostrarEquipos(list<string> listaEquipos);
 		bool ordenarEquipos(list<string> &listaEquipos);
-		inline bool condicion(string e1, string e2){return(e1>e2);};
 
 };
 
