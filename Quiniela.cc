@@ -49,7 +49,20 @@ using namespace std;
 
 
 		/*INTERFAZ*/
-		//bool Quiniela::marcarApuestas();
+		bool Quiniela::marcarApuestas(){
+			list<Partido> lPartidos = getListaPartidos();
+			list<string> apuestas;
+			Interfaz i = getInterfaz();
+
+			if(lPartidos.empty()){
+				return(false);
+			}else{
+				apuestas = i.pedirApuestasPartidos(lPartidos);
+				setApuestas(apuestas);
+				return(true);
+			}
+		}
+
 		bool Quiniela::mostrarPartidos(){
 
 			list<Partido>::iterator ite;
@@ -86,8 +99,65 @@ using namespace std;
 		}
 
 		/*QUINIELA*/
-		//bool Quiniela::simularPartidos();
-		//bool Quiniela::asignarPremios();
+		bool Quiniela::simularPartidos(){
+			int vector[40]={0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,4,4,5,5,6};
+			srand(time(NULL));
+			list<Partido> listaPartidos = getListaPartidos();
+			list<Partido>::iterator i;
+		
+			if(listaPartidos.empty()){
+				return(false);
+			}
+
+			for(i=listaPartidos.begin(); i!=listaPartidos.end(); i++){
+
+				i->setResultadoLocal(vector[rand()%40]);
+				i->setResultadoVisitante(vector[rand()%40]);
+				i->setResultado( calcularResultado(i->getResultadoLocal(),i->getResultadoVisitante()) );
+			}
+
+			setListaPartidos(listaPartidos);
+			return(true);
+		}
+
+		string Quiniela::calcularResultado(const int &local, const int &visitante){
+
+			if(local>visitante){
+				return("1");
+			}else{
+				if(local<visitante){
+					return("2");
+				}else{
+					return("x");
+				}
+			}
+
+		}
+
+
+		bool Quiniela::asignarPremios(){
+			list<Partido> partidos = getListaPartidos();
+			list<string> apuestas = getApuestas();
+			list<string>::iterator i;
+			i = apuestas.begin();
+			list<Partido>::iterator j;
+			int contador = 0;
+
+			if(partidos.empty()){
+				return false;
+			}
+
+			for(j=partidos.begin(); j!=partidos.end() ; j++){
+				if((*i)==j->getResultado()){
+					contador++;
+				}
+				i++;
+			}
+
+			cout<<"Has acertado "<<contador<<" PARTIDOS"<<endl;
+
+			return true;
+		}
 
 		bool Quiniela::asignarPartidos(){
 
@@ -117,11 +187,10 @@ using namespace std;
 						
 						if(random==vector[i]){
 							encontrado=1;
-							cout<<"paso2"<<endl;
 						}
 					}
-					cout<<"paso 1 ->"<<kk<<"-"<<i<<" random "<<random<<endl;
 				}while(encontrado==1);
+
 				vector[kk]=random;
 				advance(iAux,random);
 				partido.setEquipoLocal(*iAux);
@@ -136,8 +205,8 @@ using namespace std;
 							encontrado=1;
 						}
 					}
-					cout<<"paso 3 ->"<<kk<<"-"<<i<<" random "<<random<<endl;
 				}while(encontrado==1);
+
 				vector[kk]=random;
 				advance(iAux,random);
 				partido.setEquipoVisitante(*iAux);

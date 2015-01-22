@@ -14,11 +14,23 @@ using namespace std;
 		}
 
 
-		list<string> Interfaz::pedirApuestasPartidos(const list<Partido> &lp){
+		list<string> Interfaz::pedirApuestasPartidos(list<Partido> &lp){
 
 			list<string> apuestasAux;
 			list<Partido>::iterator i;
-			//....
+			string apuesta;
+			
+			cout<<"*Introduce las apuestas:"<<endl<<"1)Gana local"<<endl<<"x)Empate"<<endl<<"2)Gana visitante"<<endl;
+
+			for(i=lp.begin(); i!=lp.end(); i++){
+				do{
+				cout<<i->getEquipoLocal()<<" - "<<i->getEquipoVisitante()<<endl;
+				cout<<"Apuesta: ";
+				getline(cin, apuesta);
+				apuestasAux.push_back(apuesta);
+				}while(apuesta!="1"&&apuesta!="x"&&apuesta!="2");
+			}
+			return(apuestasAux);
 		}
 
 		void Interfaz::visualizarPartido( Partido &p){

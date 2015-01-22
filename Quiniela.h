@@ -24,7 +24,7 @@ class Quiniela{
 	public:
 
 		/*CONSTRUCTOR*/
-		Quiniela(string fEquipos="Equipos.txt", string fRegistro="Requistro.txt");
+		Quiniela(string fEquipos="Equipos.txt", string fRegistro="Registro.txt");
 
 		/*MODIFICADORES*/
 		inline void setListaPartidos(const list <Partido> &lp){listaPartidos_=lp;};
@@ -54,6 +54,7 @@ class Quiniela{
 		bool simularPartidos();
 		bool asignarPremios();
 		bool asignarPartidos();
+		string calcularResultado(const int &local, const int &visitante);
 
 };
 

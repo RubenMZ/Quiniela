@@ -1,0 +1,20 @@
+
+********************* JORNADA X ************************
+********************************************************
+Local			GL - GV	Visitante	Resultado
+--------------------------------------------------------
+Racing        	3 - 4	Barcelona     	2
+Sporting      	6 - 0	Almeria       	1
+Las Palmas    	0 - 5	Deportivo     	2
+Levante       	4 - 1	Atl.Madrid    	1
+Athletic      	1 - 1	Cadiz         	x
+Recreativo    	4 - 3	Valencia      	1
+Elche         	6 - 2	Real Sociedad 	1
+Celta         	1 - 5	Cordoba       	2
+Osasuna       	1 - 1	Espanyol      	x
+Real Madrid   	1 - 0	Mallorca      	1
+Valladolid    	0 - 1	Getafe        	2
+Rayo Vallecano	1 - 0	Malaga        	1
+Sevilla       	2 - 3	Villarreal    	2
+Numancia      	5 - 1	Betis         	1
+Granada       	2 - 0	Eibar         	1

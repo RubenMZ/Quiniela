@@ -19,9 +19,21 @@ int main(){
 
 	partida.asignarPartidos();
 
+	if(!partida.marcarApuestas()){
+		cout<<"ERROR. La lista de partidos esta vacia"<<endl;
+	}
+
+	partida.simularPartidos();
+
 	partida.mostrarPartidos();
 
-	partida.registrarResultados();
+	partida.asignarPremios();
+
+	if(partida.registrarResultados()){
+		cout<<"Se registraron los resultados"<<endl;
+	}else{
+		cout<<"ERROR. Al registrar resultados"<<endl;
+	}
 
 
 

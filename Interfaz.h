@@ -19,7 +19,7 @@ class Interfaz{
 	public: 
 
 		Interfaz();
-		list<string> pedirApuestasPartidos(const list<Partido> &lp);
+		list<string> pedirApuestasPartidos(list<Partido> &lp);
 		void visualizarPartido( Partido &p);
 		bool mostrarEquipos(list<string> listaEquipos);
 		bool ordenarEquipos(list<string> &listaEquipos);
