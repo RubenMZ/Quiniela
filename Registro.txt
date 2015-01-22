@@ -3,18 +3,18 @@
 ********************************************************
 Local			GL - GV	Visitante	Resultado
 --------------------------------------------------------
-Racing        	3 - 4	Barcelona     	2
-Sporting      	6 - 0	Almeria       	1
-Las Palmas    	0 - 5	Deportivo     	2
-Levante       	4 - 1	Atl.Madrid    	1
-Athletic      	1 - 1	Cadiz         	x
-Recreativo    	4 - 3	Valencia      	1
-Elche         	6 - 2	Real Sociedad 	1
-Celta         	1 - 5	Cordoba       	2
-Osasuna       	1 - 1	Espanyol      	x
-Real Madrid   	1 - 0	Mallorca      	1
-Valladolid    	0 - 1	Getafe        	2
-Rayo Vallecano	1 - 0	Malaga        	1
-Sevilla       	2 - 3	Villarreal    	2
-Numancia      	5 - 1	Betis         	1
-Granada       	2 - 0	Eibar         	1
+Valencia      	1 - 1	Real Sociedad 	x
+Cadiz         	2 - 1	Barcelona     	1
+Almeria       	1 - 0	Betis         	1
+Athletic      	1 - 0	Mallorca      	1
+Rayo Vallecano	3 - 1	Recreativo    	1
+Espanyol      	1 - 2	Getafe        	2
+Deportivo     	0 - 1	Sporting      	2
+Valladolid    	1 - 3	Cordoba       	2
+Atl.Madrid    	1 - 3	Eibar         	2
+Granada       	0 - 2	Racing        	2
+Osasuna       	2 - 2	Real Madrid   	x
+Sevilla       	3 - 3	Celta         	x
+Villarreal    	2 - 6	Las Palmas    	2
+Elche         	1 - 2	Malaga        	2
+Levante       	1 - 3	Numancia      	2

@@ -168,7 +168,8 @@ using namespace std;
 			list<Partido> listaPartidos;
 			Partido partido;
 			int equipos = 30;
-			int vector[30];
+			int *vector;
+			vector = new int[30];
 			int kk=0;
 			int random, encontrado, i;
 			srand(time(NULL));
@@ -216,6 +217,6 @@ using namespace std;
 			}
 
 			setListaPartidos(listaPartidos);
-
+			delete [] vector;
 			return (true);
 		}
